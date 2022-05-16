@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  display: none;
+}
+
+body {
+  overflow: hidden;
+} 
+
+.container {
+  width: 100vw;
+	height: 100vh;
+}
+
+.header__slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 2% 0 2% 0;
+  transition: all .9s;
+}
+
+.header__slides-box {
+  overflow: hidden;
+  width: 50vw;
+	
+}
+
+.header__slides-img {
+  display: flex;
+  width: 50vw;
+}
+
+.header__slides-img img {
+  width: 100%;
+	transition: all .9s;
+}
+
+.header__active {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50vw;
+  margin-top: 2%;
+  margin: auto;
+}
+
+.header__subtitle {
+  width: 50vw;
+}
+
+.header__subtitle-item {
+  width: 45vw;
+	overflow: hidden;
+}
+
+.header__subtitle-info {
+  display: flex;
+  width: 360vw;
+  padding-top: 0.3rem;
+  margin: auto;
+}
+
+.header__subtitle-items {
+  text-align: center;
+	width: 100%;
+	font-size: 178%;
+}
+
+.header__active-items {
+  display: flex;
+  margin-right: 2%;
+}
+
+.header__active-items label {
+  width: 1.5rem;
+	height: 1.5rem;
+	padding: 0.3rem;
+}
+
+.header__active-items label span {
+  display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  background-color:rgb(0, 0, 0);
+}
+
+.header__active-items label:hover {
+  cursor: pointer;
+}
+
+.header__active-items label span:hover {
+  cursor: pointer;
+  background-color: rgb(49, 46, 46);
+}
+
+#header__slider-1:checked ~ .header__active label:nth-child(1) span,
+#header__slider-2:checked ~ .header__active label:nth-child(2) span,
+#header__slider-3:checked ~ .header__active label:nth-child(3) span,
+#header__slider-4:checked ~ .header__active label:nth-child(4) span,
+#header__slider-5:checked ~ .header__active label:nth-child(5) span,
+#header__slider-6:checked ~ .header__active label:nth-child(6) span,
+#header__slider-7:checked ~ .header__active label:nth-child(7) span,
+#header__slider-8:checked ~ .header__active label:nth-child(8) span {
+  background-color:rgb(255, 255, 255);
+}
+
+#header__slider-1:checked ~ .header__active label:nth-child(1) span:hover,
+#header__slider-2:checked ~ .header__active label:nth-child(2) span:hover,
+#header__slider-3:checked ~ .header__active label:nth-child(3) span:hover,
+#header__slider-4:checked ~ .header__active label:nth-child(4) span:hover,
+#header__slider-5:checked ~ .header__active label:nth-child(5) span:hover,
+#header__slider-6:checked ~ .header__active label:nth-child(6) span:hover,
+#header__slider-7:checked ~ .header__active label:nth-child(7) span:hover,
+#header__slider-8:checked ~ .header__active label:nth-child(8) span:hover {
+  border: 0.1rem solid rgb(6, 2, 255);
+}
+
+#header__slider-1:checked ~ .header__slides .header__slides-img {
+  margin-left: 0%;
+}
+
+#header__slider-2:checked ~ .header__slides .header__slides-img {
+  margin-left: -100%;
+}
+
+#header__slider-3:checked ~ .header__slides .header__slides-img {
+  margin-left: -200%;
+}
+
+#header__slider-4:checked ~ .header__slides .header__slides-img {
+  margin-left: -300%;
+}
+
+#header__slider-5:checked ~ .header__slides .header__slides-img {
+  margin-left: -400%;
+}
+
+#header__slider-6:checked ~ .header__slides .header__slides-img {
+  margin-left: -500%;
+}
+
+#header__slider-7:checked ~ .header__slides .header__slides-img {
+  margin-left: -600%;
+}
+
+#header__slider-8:checked ~ .header__slides .header__slides-img {
+  margin-left: -700%;
+}
+
+.header__slides .header__slides-img {
+  transition: all .9s;
+}
+
+#header__slider-1:checked ~ .header__active .header__subtitle-info {
+  margin-left: 0%;
+}
+
+#header__slider-2:checked ~ .header__active .header__subtitle-info {
+  margin-left: -100%;
+}
+
+#header__slider-3:checked ~ .header__active .header__subtitle-info {
+  margin-left: -200%;
+}
+
+#header__slider-4:checked ~ .header__active .header__subtitle-info {
+  margin-left: -300%;
+}
+
+#header__slider-5:checked ~ .header__active .header__subtitle-info {
+  margin-left: -400%;
+}
+
+#header__slider-6:checked ~ .header__active .header__subtitle-info {
+  margin-left: -500%;
+}
+
+#header__slider-7:checked ~ .header__active .header__subtitle-info {
+  margin-left: -600%;
+}
+
+#header__slider-8:checked ~ .header__active .header__subtitle-info {
+  margin-left: -700%;
+}
+
+.header__active .header__subtitle-info {
+  transition: all .9s;
+}
+
+@media (max-width:1200px) {
+  .header__active {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
